@@ -6,7 +6,7 @@
 </head>
 <body>
     <script>
-        fatch('https://raw.githubusercontent.com/simseulnyang/dataVisualization/main/data.json')
+        fetch('https://raw.githubusercontent.com/paullabkorea/dataVisualization/main/data.json')
         .then(data => data.json())
         .then(data => {
             const body = document.querySelector('body')
@@ -19,7 +19,7 @@
             body.append(orderPopulation)
         })
         .catch(error => {
-            alert('데이터가 읽히지 않습니다!')
+            alert('데이터가 읽히지 않습니다.')
         })
     </script>
 </body>
